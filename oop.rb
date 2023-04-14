@@ -42,7 +42,7 @@ class Vampire
     end
   end
   
-  vampire1 = Vampire.new(adrian)
+  vampire1 = Vampire.new("adrian")
   p vampire1
   vampire1.drinkz_blood
   p vampire1
