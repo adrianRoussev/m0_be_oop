@@ -56,21 +56,24 @@ class Dragon
       @rider = rider
       @colour = colour
       @hungry = true
+      @times_eaten = 0
      
     end
   
-    def eats(times)
-    if times >= 4
+    def eats
+     @times_eaten = @times_eaten + 1
+    if @times_eaten >= 4
      @is_hungry = false
     end
   end
 end
   
-  dragon1 = Dragon.new("adrian", "rider", "black")
+  dragon1 = Dragon.new("happy", "rider", "black")
   p dragon1
-  dragon1.eats(4)
+  dragon1.eats
   p dragon1
-
+dragon1.eats
+p dragon1
 
 #  Write a Hobbit class
 #  it should have a dynamic name attribute (string)
