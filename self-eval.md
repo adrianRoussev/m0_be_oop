@@ -1,5 +1,5 @@
 # Self-Evaluation
 
-- This final CFU encompassed everything you've learned in Mod 0, and maybe even required some learning outside of what you've explicitly been taught. How did it feel as you faced these challenges?
-- How is your workflow going, in terms of taking breaks, staying focused, etc.?
-- What did you learn from this exercise that you want to remember as you begin Mod 1?
+- This final CFU encompassed everything you've learned in Mod 0, and maybe even required some learning outside of what you've explicitly been taught. How did it feel as you faced these challenges? It was really fun applying everything we learned and felt good to be able to apply concepts in ways that were not explicitly learned 
+- How is your workflow going, in terms of taking breaks, staying focused, etc.? my workflow is ok. I had a few emergencies this week which kind of interrupted my workflow but I was able to stay on top of learning and assignments for the most part
+- What did you learn from this exercise that you want to remember as you begin Mod 1? Not everything will be taught, but to apply and combine concepts. do not give up on the thought process if something doesn't work right away because frequently it is a small silly error. 
