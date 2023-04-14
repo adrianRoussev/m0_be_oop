@@ -4,21 +4,23 @@
 # it should have a method called "say" that returns whatever string is passed in, with "*~*" at the beginning and end of the string
 
 class Unicorn
-    def initialize(horn_length, color = "silver")
-      @horn_length = horn_length
+  attr_reader :name, :saywords, :color
+    def initialize(name, saywords = "*~**~*", color = "silver")
+      @name = name
+      @saywords = saywords
       @color = color
      
     end
   
     def say(words)
-     @horn_length = "*~*#{words}*~*"
+     @saywords = "*~*#{words}*~*"
     end
   end
   
-  unicorn1 = Unicorn.new("long")
-  p unicorn1
+  unicorn1 = Unicorn.new("uni")
+  p unicorn1.name
   unicorn1.say("hello")
-  p unicorn1
+  p unicorn1.saywords
 
 #  Write a class called Vampire
 #  it should have a dynamic name attribute
@@ -27,6 +29,7 @@ class Unicorn
 #  it should have a drink method. When called, the thirsty attribute changes to false
 
 class Vampire
+  attr_reader :name, :pet, :thirsty
     def initialize(name, pet = "bat")
       @name = name
       @pet = pet
@@ -51,6 +54,7 @@ class Vampire
 #  it should have a is_hungry attribute that is true by default
 #  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
 class Dragon
+  attr_reader :name, :rider, :colour, :hungry, :times_eaten
     def initialize(name, rider, colour)
       @name = name
       @rider = rider
@@ -85,6 +89,7 @@ p dragon1
 #  it should have a has_ring attribute. If the Hobbit's name is "Frodo", true, if not, false.
 
 class Hobbit
+  attr_reader :name, :disposition, :has_ring
     def initialize(name, disposition)
       @name = name
       @disposition = disposition
@@ -102,11 +107,18 @@ class Hobbit
       if @age>=101
         @is_old = true
       end
-      if @name == "frodo"
-         @has_ring = true
+    end
+    def has_ring?
+      if @name== "frodo"
+        @has_ring = true
       end
-  end
+    end
+  
 end
   
-  hobbit1 = Hobbit.new("frodo", "evil")
+hobbit1 = Hobbit.new("frodo", "evil")
+  p hobbit1  
+
+100.times{hobbit1.celebrate_bday}
+hobbit1.has_ring?
   p hobbit1
